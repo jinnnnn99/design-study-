@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>커뮤니티 사이트</title>
+    <style>
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .login {
+            
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+        }
+
+        .signup {
+           
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #2ecc71;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+       
+        .board-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px; 
+            margin-top: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .board {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            width: 250px;
+            height: 250px;
+        }
+        
+       
+        .board1 {
+            grid-column: 1; 
+        }
+
+        .board2 {
+            grid-column: 2; 
+        }
+
+        .board3 {
+            grid-column: 1;
+        }
+
+        .board4 {
+            grid-column: 2; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">로고</div>
+        <div>
+            <button class="login">로그인</button>
+            <button class="signup">회원가입</button> 
+        </div>
+    </header>
+
+ 
+    <div class="board-container">
+        <div class="board board1">게시판 1</div>
+        <div class="board board2">게시판 2</div>
+        <div class="board board3">게시판 3</div>
+        <div class="board board4">게시판 4</div>
+    </div>
+</body>
+</html>
